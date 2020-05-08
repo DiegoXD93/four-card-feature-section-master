@@ -1,0 +1,202 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --gray3: hsl(234, 12%, 34%);
+  --gray2: hsl(229, 6%, 66%);
+  --gray1: hsl(0, 0%, 98%);
+  --card: white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--gray1);
+}
+
+.gray2 {
+  color: var(--gray2);
+}
+
+.gray3 {
+  color: var(--gray3);
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* HEADER */
+.wraper {
+  padding: 30px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  max-width: 600px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+
+.header-subtitle {
+  font-weight: 200;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 3px;
+}
+
+.header-title {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  text-align: center;
+  font-size: .95em;
+}
+
+/* SECTION CARDS */
+.grid {
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(216, 226, 238, 1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 3.5px;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.cyan::before {
+  background: var(--cyan);
+}
+
+.red::before {
+  background: var(--red);
+}
+
+.orange::before {
+  background: var(--orange);
+}
+
+.blue::before {
+  background: var(--blue);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--gray3);
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 0.81em;
+  margin-bottom: 30px;
+  line-height: 1.8em;
+}
+
+.card-img {
+  display: block;
+  text-align: right;
+}
+
+img {
+  width: 60px;
+  margin-bottom: -10px;
+}
+
+.side {
+  grid-template-rows: 1fr;
+  margin: auto 0;
+}
+
+.middle {
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+footer {
+  margin: 0;
+}
+
+.attribution {
+  text-align: center;
+  color: var(--gray3);
+  font-weight: 200;
+  font-style: italic;
+}
+
+.attribution a {
+  color: var(--gray3);
+  font-weight: 400;
+}
+
+.attribution a {
+  color: ;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 0 375px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .header-subtitle {
+    margin-top: 45px;
+    font-size: 36px;
+    margin-bottom: -2px;
+  }
+
+  .header-title {
+    font-size: 36px;
+  }
+
+  .card {
+    padding: 35px;
+  }
+
+  .card-text {
+    margin-bottom: 35px;
+
+  }
+
+  img {
+    width: 65px;
+  }
+
+  .cyan::before,
+  .blue::before {
+    height: 4px;
+  }
+}
