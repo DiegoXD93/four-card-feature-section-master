@@ -39,7 +39,7 @@ p {
 /* HEADER */
 .wraper {
   padding: 30px;
-  max-width: 1440px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -164,8 +164,10 @@ footer {
 
 @media screen and (min-width: 1440px) {
   body {
-    padding: 0 375px;
+    padding: 0;
   }
+
+  .wrapper {}
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
